@@ -1,0 +1,51 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#70a5fd"/>
+      <stop offset="50%" style="stop-color:#bf91f3"/>
+      <stop offset="100%" style="stop-color:#38bdae"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#70a5fd;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#bf91f3;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#38bdae;stop-opacity:0.6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+ 
+  <!-- Background -->
+  <rect width="900" height="200" fill="url(#bgGrad)"/>
+ 
+  <!-- Wave shapes -->
+  <path d="M0,120 C150,80 300,160 450,100 C600,40 750,140 900,90 L900,200 L0,200 Z" fill="url(#waveGrad)" opacity="0.3"/>
+  <path d="M0,150 C200,100 400,180 600,120 C750,75 850,160 900,130 L900,200 L0,200 Z" fill="#bf91f3" opacity="0.1"/>
+ 
+  <!-- Decorative dots -->
+  <circle cx="50" cy="40" r="2" fill="#70a5fd" opacity="0.6"/>
+  <circle cx="80" cy="20" r="1.5" fill="#bf91f3" opacity="0.5"/>
+  <circle cx="820" cy="35" r="2" fill="#38bdae" opacity="0.6"/>
+  <circle cx="860" cy="55" r="1.5" fill="#70a5fd" opacity="0.5"/>
+  <circle cx="840" cy="15" r="1" fill="#bf91f3" opacity="0.4"/>
+ 
+  <!-- Name -->
+  <text x="450" y="90" font-family="'Segoe UI', Arial, sans-serif" font-size="52" font-weight="700"
+        text-anchor="middle" fill="url(#textGrad)" filter="url(#glow)">Frederick A</text>
+ 
+  <!-- Subtitle -->
+  <text x="450" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="400"
+        text-anchor="middle" fill="#8b949e" letter-spacing="1">AI &amp; Full Stack Engineer  ·  Building Intelligent Systems</text>
+ 
+  <!-- Bottom accent line -->
+  <line x1="300" y1="148" x2="600" y2="148" stroke="url(#textGrad)" stroke-width="1" opacity="0.4"/>
+</svg>
